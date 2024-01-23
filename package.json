@@ -17,6 +17,7 @@
   "dependencies": {
     "clear": "^0.1.0",
     "simplelightbox": "^2.14.2",
+    "validator": "^13.11.0",
     "vite-plugin-full-reload": "^1.0.5",
     "vite-plugin-html-inject": "^1.0.1"
   }
