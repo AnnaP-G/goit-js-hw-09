@@ -49,7 +49,7 @@ const images = [
     },
 ];
 
-const gallery = document.querySelector('.gallery');
+const gallery = document.querySelector('ul.gallery');
 
 const imgTemplate = ({preview, original, description}) =>
     `<li class="gallery-item">
@@ -66,7 +66,6 @@ const galleryTemplate = () => {
 galleryTemplate();
 
 let lightbox = new SimpleLightbox('.gallery a', {
-    sourceAttr: 'data-source',
     captionsData: 'alt',
     captionDelay: 250,
 });

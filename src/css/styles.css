@@ -41,13 +41,19 @@ ul {
     list-style: none;
 }
 
+.gallery-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    gap: 24px;  
+    text-decoration: underline;
+    color: blueviolet;
+}
+
 a {
     color: currentColor;
     text-decoration: none;
-}
-
-button {
-    cursor: pointer;
 }
 
 img {

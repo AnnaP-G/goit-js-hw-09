@@ -66,3 +66,7 @@
 .feedback-form button:focus {
     background-color: #6c8cff;
 }
+
+button {
+    cursor: pointer;
+}
