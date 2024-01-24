@@ -10,14 +10,17 @@ const loadFormData = () => {
 const saveFormData = () => {
     const email = userEmail.value.trim();
     const message = userMessage.value.trim();
-    if (email || message) {
-        localStorage.setItem(
-        "feedback-form-state",
-        JSON.stringify({ email, message })
-        );
+
+    let formData = JSON.parse(localStorage.getItem("feedback-form-state")) || {};
+
+    if (email !== "" || message !== "") {
+        formData.email = email;
+        formData.message = message;
     } else {
-    localStorage.removeItem('feedback-form-state');
+        delete formData.email;
+        delete formData.message;
     }
+    localStorage.setItem("feedback-form-state", Object.keys(formData).length ? JSON.stringify(formData) : "");
 };
 
 const onSubmit = (event) => {
