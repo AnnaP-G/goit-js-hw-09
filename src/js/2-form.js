@@ -1,3 +1,6 @@
+const userEmail = document.querySelector('input[name="email"]');
+const userMessage = document.querySelector('textarea[name="message"]');
+
 const loadFormData = () => {
     const userInputData = localStorage.getItem('feedback-form-state');
     if (userInputData) {
@@ -41,4 +44,12 @@ const feedbackForm = document.querySelector('.feedback-form');
 
 feedbackForm.addEventListener("submit", onSubmit);
 feedbackForm.addEventListener("input", saveFormData);
+
 loadFormData();
+
+
+
+
+
+
+
