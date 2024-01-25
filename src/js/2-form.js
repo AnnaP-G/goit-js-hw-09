@@ -13,7 +13,6 @@ const loadFormData = () => {
 const saveFormData = () => {
     const email = userEmail.value.trim();
     const message = userMessage.value.trim();
-
     let formData = JSON.parse(localStorage.getItem("feedback-form-state")) || {};
 
     if (email !== "" || message !== "") {
